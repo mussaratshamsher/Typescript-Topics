@@ -32,6 +32,8 @@ console.log(color.toUpperCase());
 //toLowerCase( ):
 console.log("Lower Case:", color.toLowerCase());
 //title case
+let personName = "Ayesha khan";
+console.log("Title Case:", personName.replace(/\bw/g, c => c.toUpperCase()));
 //trim( ): removes white spaces from a stirng
 var name1 = "         Welcome     ";
 console.log(name1.trim());
