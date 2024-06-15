@@ -6,7 +6,8 @@ console.log('Welcome');
 
 //Asynchorous programming:
 //asynchronous programming is essential for creating responsive and efficient applications.
-//code does not run line by line
+//code does not run line by line.
+//async program also called web Api function.
 //setTimeout: A built in function of javascript that return a promise & is used to delay output
 //Syntax of setTimeout:     setTimeout (function( ){ console.log('an anonymous function'),delay count});
 
