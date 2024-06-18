@@ -1,19 +1,32 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // synchorous programming: program that runs top to bottom or line by line
+Object.defineProperty(exports, "__esModule", { value: true });
 let welcome = "Welcome in programming";
 console.log('Welcome');
 //Asynchorous programming:
 //asynchronous programming is essential for creating responsive and efficient applications.
-//code does not run line by line
+//code does not run line by line.
+//async program also called web API function. API stands for Application Programming Interface.
+//setTimeout: A built in function of javascript that return a promise & is used to delay output
+//Syntax of setTimeout:     setTimeout (function( ){ console.log('an anonymous function'),delay count});
 console.log(1);
 console.log(2);
 setTimeout(function () {
     console.log("Asynchronous Program");
-}, 1000);
+}, 1000); //if value of variable is updated after setTimeout then result after time delay 'll be updated
 console.log(4);
 console.log(5);
-//if value of variable is updated after setTimeout then result after time delay 'll be updated
+//another example with updated value
+let x = 10;
+let y = 20;
+x = 20;
+y = 10;
+setTimeout(function () {
+    console.log(x);
+    console.log(y);
+});
+x = 10;
+y = 20;
 let a = "old";
 let b = "old2";
 setTimeout(function () {
@@ -27,7 +40,7 @@ console.log("name1");
 console.log("name2");
 setTimeout(function () {
     console.log(3);
-}, 500);
+}, 500); //set time is 30sec
 for (let i = 1; i <= 5; i++) {
     console.log(`inside of log ${i}`);
 }
@@ -41,13 +54,14 @@ setTimeout(function () {
 console.log("mySkills");
 //Asynchronous code using setInterval:
 //setInterval has the same behavior as setTimeout but the code is executed multiple times. 
-//You have to call clearInterval to kill the timer.
+//we have to call clearInterval to kill the timer.
+//setTimeout and setInterval are the only native functions of the JavaScript to execute code asynchronously. 
 let counter = 0;
 let timer = setInterval(function () {
-    console.log('I am an asynchronous message');
-    counter += 1;
+    counter++;
+    console.log(`${counter}. I am an Asynchronous Message.`);
     if (counter >= 5) {
         clearInterval(timer);
     }
-}, 1000);
-console.log('I am a synchronous message');
+}, 500); //interval outputafter 
+console.log('I am a Synchronous Message.');

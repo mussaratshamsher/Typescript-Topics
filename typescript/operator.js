@@ -41,3 +41,22 @@ console.log("Title Case:", personName.replace(/\bw/g, c => c.toUpperCase()));
 //console.log(a--)
 //console.log(b--)
 //console.log(c)
+//conditional ternary operators
+// shrinked form of If-Else 
+//syntax:
+let isSchool = true;
+let work = isSchool ? "notebook" : "luch";
+console.log(work);
+let isHome = false;
+let rest = isHome ? "pillow" : "glasses";
+console.log(rest);
+let is_home = true;
+if (rest) { //in if else form
+    console.log("pilllow");
+}
+else {
+    console.log("glasses");
+}
+let isThirsty = true;
+let home = isThirsty ? "water" : "juice";
+console.log(home);

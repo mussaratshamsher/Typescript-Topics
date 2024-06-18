@@ -6,12 +6,26 @@
 //when a particular event or task is completed.
 // This allows for asynchronous operations to be handled in a non-blocking manner.
 Object.defineProperty(exports, "__esModule", { value: true });
-function callback() {
-    console.log("this is callback");
+//simple callback function
+function callback(a) {
+    console.log("This is callback");
 }
-function runCallback(cb) {
-    cb();
+function runCallback() {
+    console.log(" My first callback"); //
 }
-runCallback(callback);
-function doingSome() {
+callback(runCallback); // calling function as an argument
+//
+function hello(callback) {
+    callback("Saim");
 }
+let arrowFunc = (name) => {
+    console.log(`Hello! ${name}`);
+};
+hello(arrowFunc);
+function twoparam(callback, newName) {
+    callback(newName);
+}
+let arrowFnc = (name) => {
+    console.log(`Welcome ${name}`);
+};
+twoparam(arrowFnc, "Fareeha");

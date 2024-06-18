@@ -1,5 +1,10 @@
-//loops are used for iterating objects
-//It minimizez the code writig. very readable & easy to use
+//LOOPS
+
+//Loops are used for iterating objects
+//Loops are of 2 types:
+//Definite Loop: if the number of iteration is known.i.e.for loop
+//indefinite Loop: when the number of iteration is not known,loops are called indefinite loops.i.e.while & do-while loops
+//Loops minimizez the code writig. very readable & easy to use
 
 //Basic: for loop  //introduced by ES6
 let a = 5
@@ -56,8 +61,8 @@ function propertyCar(car: {[key:string]: string|number}){
     }
 };
 propertyCar(car);
-//While loop
-//sytax: initial expression
+//While loop: Runs the code if condition is true & if condition is wrong, it'll exit from loop
+//syntax: initial expression
   // while(condition){statement}
 
   console.log('\n while loop')
@@ -78,6 +83,24 @@ let k =0
     k++
   }while(k< names.length)
 
+//break & continue Statements
+//break: used to exit the program/loop:
+
+let i:number = 1; 
 
 
+//break statement: causes the program to exit the loop
+for ( let j:number = 1; j<=10; j++){
+  if (i==5){
+    break;
+  }
+}
+console.log(j);
+//cotninue Statement: terminates/skips the particular iteration & continues subsequent
+for ( let a =1; a<=7; a++){
+  if (i==5){
+    continue;
+  }
+}
+console.log(a)
 
