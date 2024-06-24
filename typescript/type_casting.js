@@ -1,13 +1,11 @@
-"use strict";
 //Type casting & Narrowing   
-Object.defineProperty(exports, "__esModule", { value: true });
 //type Casting
 //Type casting is essential for performing various operations, 
 //including arithmetic calculations, and data, manipulation, and compatibility checks
 //Type casting can happen in one of two ways: 
 //implicit, which is when TypeScript handles the operation, 
 //or explicit, when the developer handles the conversion.
-//Explicit casting
+//Explicit casting:
 //explicit casting is the process of explicitly converting a value from one data type to another.
 //This is done using the "as" keyword or by using type assertion.
 //Explicit casting should be used carefully, as it can lead to runtime errors if the conversion is not valid. 
@@ -41,6 +39,10 @@ else {
     //console.log(x.toFixed(2));
     console.log('throws error');
 }
+function myName() {
+    console.log("123");
+}
+console.log(typeof myName);
 //Enum & const Enum
 //Enum
 //an enum is a way to define a set of named constants. 
@@ -80,3 +82,4 @@ var c = 1 /* Color.Green */;
 ; //can assign values to all
 var colorIndex = 4 /* Color2["Blue"] */;
 console.log(colorIndex);
+export {};

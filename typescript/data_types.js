@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //string
 console.log('mostly they are in form of aplhabets. exprssed using double quotes("").i.e. "a", "5". both are string ');
 let name = "bina";
@@ -75,5 +73,6 @@ var b;
 //void:
 //when value is never returned
 var nothing = undefined;
+export {};
 // nothing = 'hina'; //error as it will not return anything
 // nothing = 56  //error as it will not return anything

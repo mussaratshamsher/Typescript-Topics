@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //Objects//syntax
 let user = {
     name: "hira",
@@ -33,3 +31,4 @@ user.transport = "public"; //by dot notation
 delete user.age;
 delete user["class"];
 console.log(user);
+export {};

@@ -41,7 +41,7 @@ setTimeout(function ( ) {
 },2000);
 console.log(b);
   a = "Updated value";
-//if setTime is zero or minor then without cosidering that synchronous program runs first then runs asynchronous
+//if setTime is zero or minor then without considering that synchronous program runs first then runs asynchronous
 //This is because any function given to the setTimeout function will be executed asynchronously, when the main thread is not busy anymore.
 
   console.log("name1");
@@ -73,5 +73,5 @@ let timer = setInterval(function () {
     if (counter >= 5) {
         clearInterval (timer);
 }
-},500); //interval outputafter 
+},5000); //interval outputafter 5sec 
 console.log('I am a Synchronous Message.');

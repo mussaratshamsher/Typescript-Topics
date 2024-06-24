@@ -1,6 +1,4 @@
-"use strict";
 //LOOPS
-Object.defineProperty(exports, "__esModule", { value: true });
 //Loops are used for iterating objects
 //Loops are of 2 types:
 //Definite Loop: if the number of iteration is known.i.e.for loop
@@ -99,10 +97,11 @@ for (let j = 1; j <= 10; j++) {
     }
 }
 console.log(j);
-//cotninue Statement: terminates/skips the particular iteration & continues subsequent
+//cotinue Statement: terminates/skips the particular iteration & continues subsequent
 for (let a = 1; a <= 7; a++) {
     if (i == 5) {
         continue;
     }
 }
 console.log(a);
+export {};

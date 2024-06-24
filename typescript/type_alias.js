@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //Describing Circle
 let circle = {
     kind: "circle",
@@ -25,3 +23,4 @@ drinkSize = "Large";
 let age;
 age = "twenty";
 age = 35;
+export {};

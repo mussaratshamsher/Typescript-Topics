@@ -1,6 +1,4 @@
-"use strict";
 //fresh object:  newly created object
-Object.defineProperty(exports, "__esModule", { value: true });
 let myobj1 = { name: "Ali",
     age: 20,
     address: "Gulsh-e-Hadeed",
@@ -26,3 +24,4 @@ let employee1 = { name: "shan", age: 24, salary: 4500 };
 let Worker = employee1; //no Error as two properties are same within both & salary is skipped
 const addNumbers1 = (a, b) => a + b;
 const addNumbers2 = addNumbers1; // no error due to same structure
+export {};

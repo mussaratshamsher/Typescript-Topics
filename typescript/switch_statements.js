@@ -1,4 +1,3 @@
-"use strict";
 //Switch Statement: Short form of if-else
 //saves time if checking for multiple conditions 
 //Executes one statement for multiple conditions
@@ -7,7 +6,6 @@
 //1. case: for particular condition 2. beak:if you dont write break then it'll execute whole code. it is optional
 //3. if none of the condition matches, default condition 'llbe printed. it is optional  
 // Checking for valid week number
-Object.defineProperty(exports, "__esModule", { value: true });
 let weekNumber = 10;
 switch (weekNumber) {
     case 1:
@@ -63,3 +61,4 @@ switch (percentage) {
         console.log("Excellent");
     default:
 }
+export {};

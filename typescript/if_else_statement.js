@@ -1,6 +1,4 @@
-"use strict";
 //Typescript control Structures
-Object.defineProperty(exports, "__esModule", { value: true });
 //If statement: if one condition is given
 // Syntax: if ( condition) {log statement}
 var num = 2;
@@ -24,5 +22,6 @@ if (num > 10) {
 else {
     console.log("false codition");
 }
+export {};
 //Multiple if-else statement: if more than two conditions are given to performe        
 //Syntax: if(condition) {statement} else if ( condition) {statement} else {statement} 

@@ -7,7 +7,8 @@
 //Type casting can happen in one of two ways: 
 //implicit, which is when TypeScript handles the operation, 
 //or explicit, when the developer handles the conversion.
-//Explicit casting
+
+//Explicit casting:
 //explicit casting is the process of explicitly converting a value from one data type to another.
 //This is done using the "as" keyword or by using type assertion.
 //Explicit casting should be used carefully, as it can lead to runtime errors if the conversion is not valid. 
@@ -45,9 +46,10 @@ if (typeof x === 'string') {
   //console.log(x.toFixed(2));
   console.log('throws error')
 }
-
-
-
+function myName(){
+  console.log("123"); 
+}
+console.log(typeof myName);
 
 //Enum & const Enum
 //Enum

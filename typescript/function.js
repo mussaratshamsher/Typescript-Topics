@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //types of function
 //1. function without parameter
 function colourName() {
@@ -78,3 +76,4 @@ userInput(function (name) {
 setTimeout(() => {
     console.log("I am ready to go!");
 }, 20000); //waits 2min to print message
+export {};

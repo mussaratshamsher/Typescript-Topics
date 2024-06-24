@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // ways to declare string
 //first way
 var name = 'Ali';
@@ -53,3 +51,4 @@ var str = "Welcome";
 console.log(str.substring(0, 3)); //(index, length of last index)
 console.log(str.substring(0, 4));
 console.log(str.substring(2, 5)); //shows between 2nd index to 4th index
+export {};

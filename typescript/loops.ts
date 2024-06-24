@@ -96,7 +96,7 @@ for ( let j:number = 1; j<=10; j++){
   }
 }
 console.log(j);
-//cotninue Statement: terminates/skips the particular iteration & continues subsequent
+//cotinue Statement: terminates/skips the particular iteration & continues subsequent
 for ( let a =1; a<=7; a++){
   if (i==5){
     continue;

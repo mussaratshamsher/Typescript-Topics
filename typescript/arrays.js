@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 //Basic Array operations
 //
 //Array of fruits
@@ -86,3 +84,7 @@ console.log(library);
 //finding book by author
 let findBook = library.find(book => book.author === 'abc');
 console.log('BookByAuthor', findBook);
+//using typeOf for Array
+let thisArray = [1, 3, 4, 5];
+console.log(typeof thisArray);
+export {};

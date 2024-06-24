@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Operators
 // 1  Additon
 let num1 = 4;
@@ -60,3 +58,4 @@ else {
 let isThirsty = true;
 let home = isThirsty ? "water" : "juice";
 console.log(home);
+export {};

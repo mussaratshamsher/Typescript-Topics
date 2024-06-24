@@ -23,7 +23,7 @@ let arrowFunc = (name: string) => { //given name string takes value in hello fun
     console.log(`Hello! ${name}`);
 }
 hello(arrowFunc);
- 
+ //Example 2
 function twoparam(callback: any, newName: string ) {
     callback(newName)
 }
@@ -31,3 +31,69 @@ let arrowFnc = (name: string) => {
     console.log(`Welcome ${name}`); 
 }
 twoparam(arrowFnc, "Fareeha");
+
+ //Example 3: Guess out put of the given code
+
+ function cookPulao(calback: ()=> void){
+    console.log("Pulao is preparing");
+ 
+setTimeout(() =>{
+    console.log("Pulao is ready");
+    calback();  
+},3000)};
+
+function packBags_1 (callback: () => void) {
+    console.log("Cold Drink, Chips, Nimko");
+    setTimeout(() => {
+        console.log("Bags are Packed");     
+    },1500);
+}
+//cookPulao(packBags_1) //gives syntax error with no result
+
+//Example 4
+// // Making Tea
+// // Add Water
+// // After 5 seconds Tea Leaves
+// // after 10 seconds add milk
+// // After 2 seconds Sugar
+// // after 3 seconds tea is ready
+
+console.log('Add Water'); //1
+
+setTimeout(()=> {
+    console.log('Add Tea Leaves');  
+},5000) //2
+setTimeout(()=> {
+    console.log('Add Milk');  
+},10000) //2
+setTimeout(()=> {
+    console.log('Add Sugar');  
+},2000) //2
+setTimeout(()=> {
+    console.log('Tea is Ready');  
+},3000) //2    
+//given statements prints out according to time order so the sequence of Tea making steps disturbs.To avoid such problems Callback hell were introduced
+//Callback Hell: Callback hell is a term used to describe the situation where multiple asynchronous operations are nested within each other.
+//Pyramid of DOM: the "pyramid of doom" refers to a situation where multiple asynchronous operations are nested within each other, resulting in deeply indented and difficult-to-read code.  
+function prepareTea(taskName: string, delay: number, cb: () => void) {
+    setTimeout(() => {
+        console.log(taskName);
+        cb();
+    },delay);
+ }
+prepareTea("add water", 0, () => {
+    prepareTea("add tea Leaves", 5000, () => {
+        prepareTea("Add Milk", 0, ()=> {
+            prepareTea("Add sugar", 0, ()=> {
+                prepareTea("Tea is Ready",0, () => {
+                    console.log("Tea is Fantastic!");
+                    
+                });
+            });
+        });
+    });
+});
+
+
+ 
+

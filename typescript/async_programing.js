@@ -1,6 +1,4 @@
-"use strict";
 // synchorous programming: program that runs top to bottom or line by line
-Object.defineProperty(exports, "__esModule", { value: true });
 let welcome = "Welcome in programming";
 console.log('Welcome');
 //Asynchorous programming:
@@ -13,10 +11,10 @@ console.log(1);
 console.log(2);
 setTimeout(function () {
     console.log("Asynchronous Program");
-}, 1000); //if value of variable is updated after setTimeout then result after time delay 'll be updated
+}, 1000);
 console.log(4);
 console.log(5);
-//another example with updated value
+//if value of variable is updated after setTimeout then result after time delay 'll be updated
 let x = 10;
 let y = 20;
 x = 20;
@@ -27,6 +25,7 @@ setTimeout(function () {
 });
 x = 10;
 y = 20;
+//Example- 2
 let a = "old";
 let b = "old2";
 setTimeout(function () {
@@ -34,7 +33,7 @@ setTimeout(function () {
 }, 2000);
 console.log(b);
 a = "Updated value";
-//if setTime is zero or minor then without cosidering that synchronous program runs first then runs asynchronous
+//if setTime is zero or minor then without considering that synchronous program runs first then runs asynchronous
 //This is because any function given to the setTimeout function will be executed asynchronously, when the main thread is not busy anymore.
 console.log("name1");
 console.log("name2");
@@ -63,5 +62,6 @@ let timer = setInterval(function () {
     if (counter >= 5) {
         clearInterval(timer);
     }
-}, 500); //interval outputafter 
+}, 5000); //interval outputafter 5sec 
 console.log('I am a Synchronous Message.');
+export {};

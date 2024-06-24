@@ -1,8 +1,6 @@
-"use strict";
 //parameters
 // The variables that are defined when the function is declared are known as parameters.
 // parameters are the values or arguments that passed to a function.
-Object.defineProperty(exports, "__esModule", { value: true });
 //arguments
 //The values that are declared within a function when the function is called ,known as an argument.
 //Example of param & argument
@@ -45,3 +43,4 @@ function implementLoop(...restParameter) {
 }
 ;
 implementLoop(4, 5);
+export {};

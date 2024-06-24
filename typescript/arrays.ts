@@ -104,5 +104,6 @@ console.log(library);
 let findBook = library.find(book => book.author === 'abc');
 console.log('BookByAuthor', findBook);
 
-
-
+//using typeOf for Array
+let thisArray:number[] = [1,3,4,5];
+console.log(typeof thisArray);
