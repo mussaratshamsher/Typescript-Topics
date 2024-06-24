@@ -124,7 +124,7 @@ async function myPromise(promise: Promise<number>): Promise<number> {
 }
 const newPromise = new Promise<number>((resolve) =>
 setTimeout(() => {
-    resolve (4);
+    resolve (5);
 }, 1000)
 );
 

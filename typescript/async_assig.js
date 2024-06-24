@@ -107,7 +107,7 @@ async function myPromise(promise) {
     return result * 2;
 }
 const newPromise = new Promise((resolve) => setTimeout(() => {
-    resolve(4);
+    resolve(5);
 }, 1000));
 let returnPromise = myPromise(newPromise).then((res) => {
     console.log(res);
