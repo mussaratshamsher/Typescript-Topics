@@ -1,4 +1,6 @@
 //   tsc && node async_assig.js
+ 
+
 
 //Assignment Questions
 //Topic: CallBack Functions, async/await  , try-catch error
@@ -122,7 +124,7 @@ async function myPromise(promise: Promise<number>): Promise<number> {
     let result = await promise;
     return result * 2;
 }
-const newPromise = new Promise<number>((resolve) =>
+const newPromise = new Promise<number>((resolve) =>  
 setTimeout(() => {
     resolve (5);
 }, 1000)
@@ -133,4 +135,6 @@ let returnPromise = myPromise(newPromise).then((res) => {
 });
  console.log('Q10:' , returnPromise);
   
+
+
 
