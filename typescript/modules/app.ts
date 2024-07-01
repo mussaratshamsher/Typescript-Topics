@@ -1,25 +1,32 @@
 //Exporting Functions
 // Addition
-export function addition(num1: number, num2: number) {
-    return `Addition: num1 + num2`;
+export function addition(num1: number, num2: number):string {
+    let result = num1 + num2
+    return `Addition:${result}`;
+}  
+// Subtraction
+export function subt(num1: number , num2: number):string {
+    let result = num1 - num2
+    return `Subtraction: ${result}`
 }
-addition(2, 5);
-
-//Subtraction
-export function subt(num1: number , num2: number) {
-    return `Subtraction: num1 - num2`
-}
-subt( 8 , 4);
-
-// Multiplication
-export function multi(num1: number , num2: number) {
+    // Multiplication
+export function multi(num1: number , num2: number):string {
     return `Multiplication: num1 * mum2`
 }
-
-// Division
-export function divide(num1: number , num2: number) {
-    return `Division: num1 * num2`
+// Division (/)
+export function divide(num1: number , num2: number):string {
+ let result = num1 / num2
+    return `Division: ${result}`
 }
-
+// Modulus (%)
+export function modulus(num1: number, num2: number):string {
+    let result = num1 % num2
+    return `Modulus: ${result}`
+}
+// Exponent (**)
+export function exponent(num1 :number, num2: number):string {
+    let result = num1 ** num2
+    return `Exponent: ${result}`
+}
 
 

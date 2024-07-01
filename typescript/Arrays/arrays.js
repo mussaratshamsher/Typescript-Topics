@@ -34,12 +34,39 @@ console.log(alpha.slice(1, 4)); //logs new array of indexed 1,2,3
 let name = ['S', 'h', 'a', 'n'];
 let join = name.join(); //sets array into string
 console.log(join); //logs S,h,a,,n
+let space = name.join("--");
+console.log('--', space);
 //Concate Method
 //Merges(joins) two or more arrays. builtin method of typescript
 const ar1 = [1, 4, 2, 5];
 const ar2 = [2, 3, 5];
 console.log('concat');
 console.log(ar1.concat(ar2)); //merges & logs both array as a single array
+//map Method: creats copy of old array with new values
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//double each number
+let doubleNum = array.map((CurrentVal) => CurrentVal * 2);
+//console.log('Double number:', doubleNum);
+//convert number into string
+const numChange = array.map((CurrentEle) => CurrentEle.toString);
+//console.log('string', numChange); //error result
+//Filter Method: filter out selcted element
+const evenNumber = array.filter((CurrentEle) => CurrentEle % 2 === 0);
+//console.log('EvenNumber', evenNumber);
+//number greater than 3
+const numGreater = array.filter((CurrentEle) => CurrentEle > 3);
+console.log("greater", numGreater);
+// Find: returns the  Element
+const fruit1 = ["apple", "banana", "pear"];
+const result = fruit1.find((val) => {
+    return val == "pear";
+});
+//Include: checks if specific value is present or not
+const find = fruit1.includes("banana", 2);
+console.log('Include', find);
+//reduce 
+const result1 = array.reduce((acc, current) => acc + current, 0);
+console.log('Reduce', result1);
 //Tuples:Typed Array, predefined length, give type for each index
 // can't assign value other than type, nor add element
 //if define readony type then can add or delete element

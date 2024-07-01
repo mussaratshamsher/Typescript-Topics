@@ -5,14 +5,19 @@
 //indefinite Loop: when the number of iteration is not known,loops are called indefinite loops.i.e.while & do-while loops
 //Loops minimizez the code writig. very readable & easy to use
 //Basic: for loop  //introduced by ES6
-let a = 5;
 //syntax
 //for (initiliazation; conditon; increment/decrement){statement}
+let a = 5;
 for (let a = 1; a <= 5; a++) {
     console.log(a);
 }
 ;
-//Q3: print numbers using for loop,the number/3,print "fizz",
+let sum = 0;
+for (let i = 1; i <= 5; i++) {
+    sum += i;
+}
+console.log("Sum:", sum);
+//Q3: Print numbers using for loop,the number/3,print "fizz",
 //number/5 print "buzz", number/3 &/5 both,print "FizzBuzz".
 console.log('\n Assignment3');
 function fizzBuzz() {
@@ -29,7 +34,7 @@ function fizzBuzz() {
 }
 ;
 fizzBuzz();
-//for of loop // for of & for in loop are only used for array
+//for of loop : for of & for in loop are only used for array
 //Syntax:
 // for ( let variable of array/object) {log variable}
 let names = ['Ali', 'Zain', 'Ramsha', 'Hana'];
@@ -44,6 +49,15 @@ function arrayLoop() {
     }
 }
 arrayLoop();
+let arr = [1, 2, 3, 4];
+for (let value of arr) {
+    console.log(value);
+}
+;
+let friendsName = ["Ali", "Shan", "Mina"];
+for (let names of friendsName) {
+    console.log(names);
+}
 //for in loop
 //Syntax:
 //for (let variable in variable){ log variable}
@@ -55,6 +69,16 @@ for (let movies in favMovies) {
     console.log("\n Elements InLoop: ", favMovies[movies]); //logs elements
 }
 ;
+let object = {
+    student1: " Ali",
+    student2: " Bilal"
+};
+for (let key in object) {
+    console.log(key);
+}
+for (let key in object) {
+    console.log(object[key]); //gives values
+}
 //Q: function that prints car properties; make,model & year
 console.log('\n Assignment2');
 let car = {
@@ -67,15 +91,31 @@ function propertyCar(car) {
 }
 ;
 propertyCar(car);
+//For Each loop:
+// Syntax: nameOfVariable.forEach(element) => {block of code}
+let namesOfList = ['hina', 'saima', 'tia'];
+namesOfList.forEach(names => {
+    console.log(`asslam-O-alaikum! ${names} I want to go Murree with you..`);
+});
 //While loop: Runs the code if condition is true & if condition is wrong, it'll exit from loop
 //syntax: initial expression
-// while(condition){statement}
+// while(variable condition){statement}
 console.log('\n while loop');
 let j = 0;
 while (j < names.length) {
     console.log(names[j]);
     j++;
 }
+let ab = 0;
+while (ab < 5) {
+    console.log(ab);
+    ab++;
+}
+let l = 1;
+while (l <= 10) {
+    l *= 2;
+}
+console.log('multi', l);
 //do While Loop
 //The do.. while loop runs the block of code at least once before checking for the specified condition.
 // For the rest of the iterations, it runs the block of code only if the specified condition is met. 
