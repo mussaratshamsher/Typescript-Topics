@@ -18,3 +18,4 @@ console.log(add(true, true)); //logs option3
 //other than given 3options , new calling option will through error 
 
 
+

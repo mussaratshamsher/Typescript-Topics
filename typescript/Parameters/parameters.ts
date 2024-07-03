@@ -30,6 +30,11 @@ function optionalParameter(name: string, course: string, age? : number):string|n
 optionalParameter('hina', 'IT', 20);
 optionalParameter('anam', 'Commerce');
 
+function optional(name? : string) {
+    console.log(`hello, ${name}`);
+}
+optional('Anum');
+
 //3. Rest parameter
 // this parameter is used when the value of parameter is not known
 //expressed using elipses notation (...)

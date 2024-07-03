@@ -30,6 +30,8 @@ let str: string = "Hello";
 let result = num + str; 
 console.log(result); // Output: "10Hello"
 
+let num1: boolean | unknown =5 //if assigned unknown as a type then can give any value
+
 //Narrowing
 //Narrowing in TypeScript refers to the process of narrowing down the type of a variable or expression 
 //it helps make code more robust by allowing precise typing based on runtime conditions.
@@ -77,9 +79,11 @@ enum days{
   'sunday',
 }
 function enumDays(days: [key:string] ){
- 
+ }
+console.log(days.wednesday); //gives index of wed
+console.log(days[5]);  // gives value on given index
 
-}
+
 
 
 //const Enum

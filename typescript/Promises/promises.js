@@ -79,15 +79,23 @@ prepareTea("Add water", 0)
     .then(() => prepareTea('Add Sugar', 2000))
     .then(() => prepareTea('Tea is Ready', 0))
     .catch(() => console.log('something went wrong.'));
-// percentage example
-let promise = new Promise((resolve, reject) => {
-    let percentage = 80;
-    if (percentage >= 80) {
-        resolve("Good");
+// async-await : latest type of promise
+async function prepare_tea() {
+    try {
+        await delay(0);
+        console.log("Await making Tea!");
+        await delay(0);
+        console.log("Add Water");
+        await delay(5000);
+        console.log('Add Milk');
+        await delay(2000);
+        console.log('Add Sugar');
+        await delay(0);
+        console.log('Tea is ready');
     }
-    else {
-        reject("Bad");
+    catch (error) {
+        console.log('Something went wrong', error);
     }
-});
-console.log(promise);
+}
+prepare_tea();
 export {};
