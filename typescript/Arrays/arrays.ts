@@ -79,11 +79,16 @@ const result = fruit1.find((val) => {
 const find = fruit1.includes("banana",2)
 console.log('Include', find)
 
-//reduce 
+//reduce : reduce number by doing sum of given multiple numbers 
 const result1 = array.reduce((acc,current) => acc + current, 0);
 console.log('Reduce', result1);
- 
-
+let numbers = [1, 2,3, 4,5]
+const result5 = numbers.reduce((acc,current) => acc + current, 0);
+ console.log('result5', result5);
+ const myData : number [] = [30, 20,10];
+ myData.reduce((a,b) => {return a+b}, 0);
+ console.log(myData);
+  
 //Tuples:Typed Array, predefined length, give type for each index
 // can't assign value other than type, nor add element
 //if define readony type then can add or delete element

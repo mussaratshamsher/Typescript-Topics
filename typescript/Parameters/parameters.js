@@ -25,6 +25,10 @@ function optionalParameter(name, course, age) {
 }
 optionalParameter('hina', 'IT', 20);
 optionalParameter('anam', 'Commerce');
+function optional(name) {
+    console.log(`hello, ${name}`);
+}
+optional('Anum');
 //3. Rest parameter
 // this parameter is used when the value of parameter is not known
 //expressed using elipses notation (...)

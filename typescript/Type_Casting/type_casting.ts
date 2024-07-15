@@ -1,4 +1,4 @@
-//Type casting & Narrowing   
+//Type casting & type Narrowing   
 
 //type Casting
 //Type casting is essential for performing various operations, 
@@ -32,11 +32,11 @@ console.log(result); // Output: "10Hello"
 
 let num1: boolean | unknown =5 //if assigned unknown as a type then can give any value
 
-//Narrowing
+//Narrowing   //type guard: (typeof , instanceof)
 //Narrowing in TypeScript refers to the process of narrowing down the type of a variable or expression 
 //it helps make code more robust by allowing precise typing based on runtime conditions.
 //Narrowing is also useful when working with union types or discriminated unions.
-
+//type Guard: typeof
 let x: string | number;
 x = "mussarat"
 if (typeof x === 'string') {
@@ -48,59 +48,56 @@ if (typeof x === 'string') {
   //console.log(x.toFixed(2));
   console.log('throws error')
 }
+let arr = [1,2,3];
+console.log(typeof arr);
+let person = {
+  name: " Hira",
+  home: "Multan",
+}
+console.log(typeof person);
 function myName(){
   console.log("123"); 
 }
 console.log(typeof myName);
-
-//Enum & const Enum
-//Enum
-//an enum is a way to define a set of named constants. 
-//It allows developers to create a collection of related values
-//Enums are useful for defining  working with a fixed set of values.i.e.days of the week,colors, or status codes. 
-//They provide type safety and readability to the code 
-//rather than using enum , const enum is preferred
-//Enum value counts from zero like index value
-//Syntax: enum vairable{constant object}
-          //log statement
- enum car {'Alto', 'Mehran', 'Suzuki', 'Cultus'}         
-console.log(car[1]); //giving index to log element 'Mehran'
-console.log(car['Suzuki']); //accessing index using element
-
-//Q: Enum for days of week. function that takes a day as an argument & returns "Weekend" if Saturday/Sunday & 
-// "Weekday" for other days.
-enum days{
-  'monday',
-  'tuesday',
-  'wednesday',
-  'thursday',
-  'friday',
-  'saturday',
-  'sunday',
+//key of
+const myObj = {
+  name: " Hadi",
 }
-function enumDays(days: [key:string] ){
- }
-console.log(days.wednesday); //gives index of wed
-console.log(days[5]);  // gives value on given index
+const mykey: keyof typeof myObj = "name";
+myObj[mykey];
 
+//instance of
+class A{
+  first () {
+    console.log("This is class A.");
+  }
+}
+class B {
+  second () {
+    console.log("This is class B.");
+  }
+}
+function typeCheck(data: A|B) {
+if (data instanceof A){
+  data.first();
+}else{
+  data.second();
+}
+}
+const myClass1: A = new A() // intance of class A
+typeCheck(myClass1);
+const myClass2: B = new B()
+typeCheck(myClass2);
 
+//Union type :  we can use two or types of data can be using union sign
 
+let data: string | number = "Ali";
+data = 12.
+console.log(data.toString);
 
-//const Enum
-//Using const enums can improve performance and reduce memory overhead
-//by eliminating unnecessary runtime objects created by regular enums.
-//there is no JavaScript representation for const enums,
-//they can only include constant members (such as string literals or numbers),
-//they can't take auto incremented values but enums take
-
-const enum Color {Red, Green, Blue};//starts with 0
-var c: Color = Color.Green;
-const enum Color1 {Red = 1, Green, Blue};
-//var colorName: string = Color[2]; //Not allowed with const enums
-//console.log(colorName);
-
-const enum Color2 {Red = 1, Green = 2, Blue = 4};//can assign values to all
-var colorIndex = Color2["Blue"];
-console.log(colorIndex);
-
+//Union Literals: We can give multiple values as type to a variable using union literals  
+//each value is separated using union sign
+let favColor :"black" | "blue" | "white";
+favColor = 'white';
+console.log(favColor); //output white
 

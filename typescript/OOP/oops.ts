@@ -13,29 +13,20 @@
 
 //Key concepts of OOP & 4 Main Pillars of OOP
 // Classes (A blue print for creating objects) & Objects  (instance of calss)
-// Properties (Characteristics or attributes of an object) & Methods (Actions or behaviours that objects can perform)
-//1. Encapsulation: Protecting data
-//2. Inheritance :  One property of object is aquiring to another property of object
-//3. Polymorphism : Different behaviour at different instances
+// Properties (Characteristics or attributes of an object) & Methods (Actions or behaviours that objects can perform) 
+//1. Inheritance :  One property of object is aquiring to another property of object
+//2. Polymorphism : Different behaviour at different instances
+//3. Encapsulation: Protecting data
 //4. Abstraction : Hiding irrelevent data
 
 //Interface: Allows to define the structure or shape of an object & specify the properties & methods that an object has 
 
-type Person = { //type Alias
-    name : string;
-    age: number;
-    gender: string;
-}
 interface Person1 { //interface
     name : string;
     age  : number;
     gender : string;
 }
-type Human = {isAlive: boolean}
 
-interface Person2 extends Person1 {
-    age: number
-}
 //let Sana: Person2= {name: string; age: number}
 
 

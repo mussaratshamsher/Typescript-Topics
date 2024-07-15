@@ -22,6 +22,11 @@ let array = ['string', false, 67, 8 > 2,];
 //function error(message: string): never {
 //   throw new Error(message); }
 // var f:never = null  throws error as null is not assigned to never type
+function abc() {
+    while (true) {
+        //gives infinite value when called
+    }
+}
 //unknown
 //represents a variable where the type is not known at the of writing code
 let data;

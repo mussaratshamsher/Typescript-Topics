@@ -1,5 +1,3 @@
-//   tsc && node async_assig.js
- 
 
 
 //Assignment Questions

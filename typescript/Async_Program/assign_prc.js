@@ -1,4 +1,3 @@
-//   tsc && node async_assig.js
 //Assignment Questions
 //Topic: CallBack Functions, async/await  , try-catch error
 //Question 1: Write a TypeScript function that uses async/await to wait for 2 seconds and then returns a string "Hello World".

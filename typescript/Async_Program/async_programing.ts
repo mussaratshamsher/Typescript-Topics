@@ -74,4 +74,4 @@ let timer = setInterval(function () {
         clearInterval (timer);
 }
 },5000); //interval outputafter 5sec 
-console.log('I am a Synchronous Message.');
+console.log('I am a Synchronous Message.')
