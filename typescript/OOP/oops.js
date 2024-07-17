@@ -2,4 +2,9 @@
 //they provide a framework for solving problems & writing programs.
 //Different paradigms emphasize various concepts & techniques, guiding how software developers structure & think about their code.
 export {};
-//let Sana: Person2= {name: string; age: number}
+// class
+// //class person1: Person = {name: "Ali",
+//      age: 20,
+//       gender: "male",}
+// //inheritance
+// class person2 extends person1

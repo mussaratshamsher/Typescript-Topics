@@ -21,13 +21,17 @@
 
 //Interface: Allows to define the structure or shape of an object & specify the properties & methods that an object has 
 
-interface Person1 { //interface
+interface Person { //interface
     name : string;
     age  : number;
     gender : string;
 }
-
-//let Sana: Person2= {name: string; age: number}
+// class
+// //class person1: Person = {name: "Ali",
+//      age: 20,
+//       gender: "male",}
+// //inheritance
+// class person2 extends person1
 
 
 
