@@ -1,7 +1,7 @@
 
 //fresh object:  newly created object
 
-//staled objects: old or already used objct 
+//staled objects: old or already used object 
 
 //strong typing checks compatibility & access vlaues of fresh objects but 
 //in scaled objects TS ignores access values.
@@ -36,7 +36,7 @@ let sphere: Sphere = { diameter: 10, size: 'small'}
 ball = sphere //gives no error
 sphere = ball //no error because type  & access values are both compatible
 
-/////// If we add a type which structurally contains all of
+  // If we add a type which structurally contains all of
   // the members of Ball and Sphere, then it also can be
   // set to be a ball or sphere.
 interface Tube {

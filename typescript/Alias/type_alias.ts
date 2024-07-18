@@ -29,6 +29,11 @@ let drinkSize:   "Small" | "Medium" | "Large";
 drinkSize = "Small";
 drinkSize = "Large";
 
+let favColor :"black" | "blue" | "white" | 7;  //octal literals are not allowed.i.e.098766
+favColor = 'white';
+console.log(favColor); //output white
+
+
 //Type Union
 // Allows a variable to hold values of multitypes.
 //Variable can be of one type or another
@@ -37,3 +42,7 @@ drinkSize = "Large";
 let age: string | number ;
 age = "twenty";
 age =  35;
+
+let data: string | number = "Ali";
+data = 12;
+console.log(data.toString);

@@ -2,11 +2,27 @@
 
 //type Casting
 //Type casting is essential for performing various operations, 
-//including arithmetic calculations, and data, manipulation, and compatibility checks
+//including arithmetic calculations, and data manipulation, and compatibility checks
 
 //Type casting can happen in one of two ways: 
 //implicit, which is when TypeScript handles the operation, 
 //or explicit, when the developer handles the conversion.
+
+//Implicit Casting
+//implicit casting(or automatic type conversion or type coercion) is the process of
+//automatically converting a value from one data type to another without the need for explicit syntax.
+//Implicit casting can be useful as it allows for more convenient and intuitive coding.
+//but also involve potential risk & surity of appropriate specific use Case.
+
+let num: number = 10;
+let str: string = "Hello";
+let result = num + str;  //shows type string
+console.log(result); // Output: "10Hello"
+//Examlp2
+let num1: boolean | unknown =5 //if assigned unknown as a type then can give any value
+  num1 = "k";
+  num1 = true;
+
 
 //Explicit casting:
 //explicit casting is the process of explicitly converting a value from one data type to another.
@@ -18,19 +34,6 @@ console.log((<string> myname).length)
 
 let myphone: unknown = "039946";
 console.log((myphone as string).concat);
-
-//Implicit Casting
-//implicit casting(or automatic type conversion or type coercion) is the process of
-//automatically converting a value from one data type to another without the need for explicit syntax.
-//Implicit casting can be useful as it allows for more convenient and intuitive coding.
-//but also involve potential risk & surity of approprate specific use Case.
-
-let num: number = 10;
-let str: string = "Hello";
-let result = num + str; 
-console.log(result); // Output: "10Hello"
-
-let num1: boolean | unknown =5 //if assigned unknown as a type then can give any value
 
 //Narrowing   //type guard: (typeof , instanceof)
 //Narrowing in TypeScript refers to the process of narrowing down the type of a variable or expression 
@@ -88,16 +91,4 @@ const myClass1: A = new A() // intance of class A
 typeCheck(myClass1);
 const myClass2: B = new B()
 typeCheck(myClass2);
-
-//Union type :  we can use two or types of data can be using union sign
-
-let data: string | number = "Ali";
-data = 12.
-console.log(data.toString);
-
-//Union Literals: We can give multiple values as type to a variable using union literals  
-//each value is separated using union sign
-let favColor :"black" | "blue" | "white";
-favColor = 'white';
-console.log(favColor); //output white
 

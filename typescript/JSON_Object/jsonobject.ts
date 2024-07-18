@@ -25,10 +25,10 @@
 // JavaScript objects can only be used in JavaScript but JSON can be created and used by other programming languages.
 // JSON Data
 // JSON data consists of key/value pairs similar to JavaScript object properties.
-// The key and values are written in double quotes separated by a :.
+// The key and values are written in double quotes & are separated by ' : '.
 // Example :
 // JSON data
-"name": "Vipin"
+"name": "Vipin",
 
 JSON Object
 The JSON object is written inside curly braces { }.
@@ -80,11 +80,12 @@ console.log(detail["age"]); //vipin
 // JSON is the most commonly used format for transmitting data (data interchange) from a server to a client and vice-versa.
 // JSON data are very easy to parse and use.
 // JSON is language independent(We can create and use JSON in other programming languages too).
+
 // Examples of JSON
 // package.json
-// tsconfig.json
-// Reference Twitter Post */
+// tsconfig.json */
 
+//methods of JSON
 //JSON.parse()	This method takes a JSON string and transforms it into a JavaScript object.
 //It is useful when dealing with data receive as JSON from a web server or API.
 
@@ -95,7 +96,7 @@ console.log(javaObj);
 //JSON.stringify()	This method converts a JavaScript value (JSON object) to a JSON string representation.
 
 let myObj = {  //javascript object
-    key : "value",
+    key: "value",
     property: "method",
 }
 let json_String = JSON.stringify(myObj);

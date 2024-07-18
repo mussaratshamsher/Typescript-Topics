@@ -1,10 +1,23 @@
 //Type casting & type Narrowing   
 //type Casting
 //Type casting is essential for performing various operations, 
-//including arithmetic calculations, and data, manipulation, and compatibility checks
+//including arithmetic calculations, and data manipulation, and compatibility checks
 //Type casting can happen in one of two ways: 
 //implicit, which is when TypeScript handles the operation, 
 //or explicit, when the developer handles the conversion.
+//Implicit Casting
+//implicit casting(or automatic type conversion or type coercion) is the process of
+//automatically converting a value from one data type to another without the need for explicit syntax.
+//Implicit casting can be useful as it allows for more convenient and intuitive coding.
+//but also involve potential risk & surity of appropriate specific use Case.
+let num = 10;
+let str = "Hello";
+let result = num + str;
+console.log(result); // Output: "10Hello"
+let num1 = 5; //if assigned unknown as a type then can give any value
+let num2 = 5; // num is of type number
+let str2 = 'num2'; // TypeScript performs implicit casting from number to string
+console.log(str2); // Output: "5"
 //Explicit casting:
 //explicit casting is the process of explicitly converting a value from one data type to another.
 //This is done using the "as" keyword or by using type assertion.
@@ -14,16 +27,6 @@ console.log(myname.length);
 console.log(myname.length);
 let myphone = "039946";
 console.log(myphone.concat);
-//Implicit Casting
-//implicit casting(or automatic type conversion or type coercion) is the process of
-//automatically converting a value from one data type to another without the need for explicit syntax.
-//Implicit casting can be useful as it allows for more convenient and intuitive coding.
-//but also involve potential risk & surity of approprate specific use Case.
-let num = 10;
-let str = "Hello";
-let result = num + str;
-console.log(result); // Output: "10Hello"
-let num1 = 5; //if assigned unknown as a type then can give any value
 //Narrowing   //type guard: (typeof , instanceof)
 //Narrowing in TypeScript refers to the process of narrowing down the type of a variable or expression 
 //it helps make code more robust by allowing precise typing based on runtime conditions.
@@ -81,13 +84,4 @@ const myClass1 = new A(); // intance of class A
 typeCheck(myClass1);
 const myClass2 = new B();
 typeCheck(myClass2);
-//Union type :  we can use two or types of data can be using union sign
-let data = "Ali";
-data = 12.;
-console.log(data.toString);
-//Union Literals: We can give multiple values as type to a variable using union literals  
-//each value is separated using union sign
-let favColor;
-favColor = 'white';
-console.log(favColor); //output white
 export {};
