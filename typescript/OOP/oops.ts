@@ -26,6 +26,17 @@ interface Person { //interface
     age  : number;
     gender : string;
 }
+interface Employee {
+    name: string;
+    salary: number;
+}
+type Admin = Person & Employee //different interfaces typed into one
+let admin: Admin ={
+    name: "Bilal",
+    age: 45,
+    gender: "male",
+    salary: 500000,
+}
 // class
 // //class person1: Person = {name: "Ali",
 //      age: 20,

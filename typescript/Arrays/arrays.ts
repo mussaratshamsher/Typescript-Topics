@@ -1,5 +1,8 @@
+
+//Array: set of same or different types of elements.
+
 //Basic Array operations
-//
+
 //Array of fruits
 let fruits = ["pear", "orange", "mango", "grapes"]
 console.log("Fruit's Array:", fruits);
@@ -83,15 +86,15 @@ console.log('Include', find)
 const result1 = array.reduce((acc,current) => acc + current, 0);
 console.log('Reduce', result1);
 let numbers = [1, 2,3, 4,5]
-const result5 = numbers.reduce((acc,current) => acc + current, 0);
- console.log('result5', result5);
+const result5 = numbers.reduce((acc,current) => acc + current);
+ console.log('Result without Zero:', result5);
  const myData : number [] = [30, 20,10];
  myData.reduce((a,b) => {return a+b}, 0);
  console.log(myData);
   
 //Tuples:Typed Array, predefined length, give type for each index
 // can't assign value other than type, nor add element
-//if define readony type then can add or delete element
+//if defines readonly type then can add or delete element
 let arr: [string,number,string,boolean] = ['name', 23, 'address', true]
 console.log(arr);
 
@@ -142,6 +145,12 @@ console.log(library);
 let findBook = library.find(book => book.author === 'abc');
 console.log('BookByAuthor', findBook);
 
-//using typeOf for Array
+//using typeOf for Array:
+//it gives you result as object because in javascript array type is consoidered as object
 let thisArray:number[] = [1,3,4,5];
-console.log(typeof thisArray);
+console.log(typeof thisArray); //object
+
+interface MyArray {  
+  [index: number]: string; // for regular array indexing  
+  [key: string]: string; // allows string keys as well  
+} 

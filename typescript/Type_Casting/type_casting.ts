@@ -18,7 +18,7 @@ let num: number = 10;
 let str: string = "Hello";
 let result = num + str;  //shows type string
 console.log(result); // Output: "10Hello"
-//Examlp2
+//Example2
 let num1: boolean | unknown =5 //if assigned unknown as a type then can give any value
   num1 = "k";
   num1 = true;

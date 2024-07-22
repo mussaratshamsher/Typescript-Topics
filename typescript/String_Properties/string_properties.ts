@@ -1,9 +1,9 @@
 
 
 // ways to declare string
-//first way
+//first way:using single quotes
 var name: string = 'Ali';
-//2nd way
+//2nd way: using double quotes
 var name1: string = "Karachi";
 //3rd way: using back ticks(tempelate literals)
 var name2 : string = `${name} lives in ${name1}`;
@@ -57,7 +57,7 @@ console.log(fruits.split(' ')); //delemeter is space
 console.log(fruits.split(' ', 2)); //delemeter is into values
 console.log(fruits.split(' ', 1)); // split into 1 
 
-//sustring( ): it returns a string between the two given indexes.
+//substring( ): it returns a string between the two given indexes.
 // this is used to extract portion of string as substring
 var str: string = "Welcome";
 console.log(str.substring(0,3)); //(index, length of last index)

@@ -88,6 +88,7 @@ console.log(detail["age"]); //vipin
 const jsonString = `{"name": "Ali", "age":"20", "city": "karachi"}`; //json string
 const javaObj = JSON.parse(jsonString);
 console.log(javaObj);
+console.log(typeof jsonString); //logs string
 //JSON.stringify()	This method converts a JavaScript value (JSON object) to a JSON string representation.
 let myObj = {
     key: "value",
@@ -95,4 +96,5 @@ let myObj = {
 };
 let json_String = JSON.stringify(myObj);
 console.log(json_String);
+console.log(typeof myObj); //logs object
 export {};

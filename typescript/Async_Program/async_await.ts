@@ -63,10 +63,10 @@ let data = fetch(url)
 
 //async /await: modern type of Promise 
 
-let url1 = "https://jsonplaceholder.typicode.com/posts/1";
+let url2 = "https://jsonplaceholder.typicode.com/posts/1";
 
 let func = async() => {
-    let data = await fetch(url1)
+    let data = await fetch(url2)
     let result = await data.json()
     console.log(result);
     

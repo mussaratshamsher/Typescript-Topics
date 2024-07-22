@@ -89,9 +89,11 @@ console.log(detail["age"]); //vipin
 //JSON.parse()	This method takes a JSON string and transforms it into a JavaScript object.
 //It is useful when dealing with data receive as JSON from a web server or API.
 
-const jsonString: string = `{"name": "Ali", "age":"20", "city": "karachi"}`; //json string
+const jsonString = `{"name": "Ali", "age":"20", "city": "karachi"}`; //json string
 const javaObj = JSON.parse(jsonString);
 console.log(javaObj);
+console.log(typeof jsonString);//logs string
+
 
 //JSON.stringify()	This method converts a JavaScript value (JSON object) to a JSON string representation.
 
@@ -101,3 +103,4 @@ let myObj = {  //javascript object
 }
 let json_String = JSON.stringify(myObj);
 console.log(json_String);
+console.log(typeof myObj);//logs object

@@ -12,12 +12,12 @@
 //but also involve potential risk & surity of appropriate specific use Case.
 let num = 10;
 let str = "Hello";
-let result = num + str;
+let result = num + str; //shows type string
 console.log(result); // Output: "10Hello"
+//Example2
 let num1 = 5; //if assigned unknown as a type then can give any value
-let num2 = 5; // num is of type number
-let str2 = 'num2'; // TypeScript performs implicit casting from number to string
-console.log(str2); // Output: "5"
+num1 = "k";
+num1 = true;
 //Explicit casting:
 //explicit casting is the process of explicitly converting a value from one data type to another.
 //This is done using the "as" keyword or by using type assertion.

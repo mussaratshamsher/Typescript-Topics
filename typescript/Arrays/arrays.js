@@ -1,5 +1,5 @@
+//Array: set of same or different types of elements.
 //Basic Array operations
-//
 //Array of fruits
 let fruits = ["pear", "orange", "mango", "grapes"];
 console.log("Fruit's Array:", fruits);
@@ -68,8 +68,8 @@ console.log('Include', find);
 const result1 = array.reduce((acc, current) => acc + current, 0);
 console.log('Reduce', result1);
 let numbers = [1, 2, 3, 4, 5];
-const result5 = numbers.reduce((acc, current) => acc + current, 0);
-console.log('result5', result5);
+const result5 = numbers.reduce((acc, current) => acc + current);
+console.log('Removed zero in function', result5);
 const myData = [30, 20, 10];
 myData.reduce((a, b) => { return a + b; }, 0);
 console.log(myData);
