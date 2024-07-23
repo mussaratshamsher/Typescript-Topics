@@ -7,6 +7,28 @@
 //rather than using enum , const enum is preferred
 //Enum value counts from zero like index value
 //Syntax: enum vairable{constant object}
+
+//computed enums: when values assigned to member of enum other than number, so the member will be computed enum .
+
+// Fully inilitiazed enum:if values assigned to all members then enum will be fully initialized
+//Partially initilized enum: if values assigned to some of the members then enum will be partially inilized.
+
+//heterogeneous  : differnt type of value assigned to members
+//homogenesous enums: same type of value assigned to members
+
+enum Days {
+  Monday, //members
+  Tuesday,
+  Wednesday,
+}
+console.log(Days);
+const enum  Days2 {
+  Thudrsday,
+  Friday, 
+  Saturday,
+}
+console.log(Days2.Saturday);
+
           //log statement
           enum car {'Alto', 'Mehran', 'Suzuki', 'Cultus'}         
           console.log(car[1]); //giving index to log element 'Mehran'
@@ -44,6 +66,9 @@
           const enum Color2 {Red = 1, Green = 2, Blue = 4};//can assign values to all
           var colorIndex = Color2["Blue"];
           console.log(colorIndex);
-          
+          //difference bw enum & const enum
+//reverse maping: members and values both can be get in case of enum.this is known as reverse maping
+//enum shows reverse maping but const enum does not log whole enum entity
+//const enum's performance is better than simple enum
           
           

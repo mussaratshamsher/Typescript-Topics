@@ -12,7 +12,8 @@ colorName()// no result due to return
 let color =  colorName();//method 1 to log
 console.log(color)
 console.log(colorName()) //method 2
-//2. Arrow function //define function using a variable & => is used
+//2. Arrow function /lamda function 
+//define function using a variable & => is used
 let arrowFunc= () =>{
 console.log("typescript")
 }
@@ -29,7 +30,7 @@ let arrowFnct = (lang: string) => {
 }
 arrowFnct("Python");
 // in case of return: console.log(arrowFnct("Python"));
-//3.Anonymous Function
+//3.Anonymous Function 
 //it represents a function without a specific name.
 let myAdd = function (x:number, y:number) {
     return x + y;
@@ -49,6 +50,7 @@ countDown(5);
 //5. Async Function
 //a function that can be paused & resumed later.marked with keyword async
 //inside it we can use "await" to pause execution
+
 // 6. Nested function: function with in function
 // Nested Function we can simmply call  different or make function init
 function outerFnc(){
@@ -64,6 +66,15 @@ outerFnc();
 })();
 //8. Function callbacks
 // they allow to pass functions as arguments to other functions
+function callback(a: any ) { //'a' paramter allows to pass function as an argument in callback function
+    console.log("This is callback"); 
+    
+}
+function runCallback() {
+    console.log(" My first callback"); //
+    } 
+    callback(runCallback);// calling function as an argument
+    //Example 2
 function userInput(callback:any) {
     let name ="Sir Ameen Alam";
     callback(name);
@@ -71,6 +82,7 @@ function userInput(callback:any) {
 userInput(function(name:string){
     console.log("Asslam-o-alaikum! "+ name);
 });
+
 // set timeOut order
 //schedule a task using timer
 setTimeout(()=>{
