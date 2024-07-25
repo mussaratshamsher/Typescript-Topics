@@ -29,3 +29,22 @@ a = 7
  var colour =  'red';
      colour =  'pink'; //re assigned
      
+//Scopes of Variables
+//let: block scope
+{let b=8}
+//console.log(b); //throws erroras let is blocked scope
+
+//const: block scope
+{const a= 5} // const is block scopped
+//console.log(a);//throws 
+
+//var: function scope
+{var c= 9}
+console.log(c); //no error
+
+function varScope (){
+     var d= 4
+console.log(d);
+}
+//console.log(d); //throws error as var is function scopped
+

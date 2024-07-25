@@ -10,32 +10,46 @@ let user = {
         phone: 1234,
     }
 };
-for (let key in user) {
-    console.log(key);
-}
-; //to access keys property by for loop
-//console.log(user);
 // Access single key-value
-//console.log(user.name) //by dot notation
-//console.log(user["class"]) //by bracket notation
-//console.log(user.school.phone)//to access key-value of object within object
+console.log(user.name); //by dot notation
+console.log(user["class"]); //by bracket notation
+//to access key-value of object within object
+console.log(user.school.phone);
 //checks presence/absence in object
-//console.log("subjects" in user)
-//To add new key-value pair with in an object
-//user['address'] = "orangi town gulshn-e-zia";
+console.log("subjects" in user);
+//replacing key value
+const myObjc = {
+    name: "Muhammad Fasih",
+    age: 20,
+    rollNum: 1234,
+};
+const myKey = "name";
+myObjc[myKey] = "Salman";
+console.log(myObjc);
+//To add new key-value pair within an object
+user['address'] = "orangi town gulshn-e-zia";
 user['institution'] = 'governor house'; //by bracket notation
 user.transport = "public"; //by dot notation
+user.school['fees'] = 2000; //add key into key
 //console.log(user);
 //to remove key-value from obj
-//delete user.address;
+delete user.name;
+delete user.address;
 delete user.age;
 delete user["class"];
 console.log(user);
+//to access keys property by for loop
+for (let key in user) {
+    console.log(key);
+}
+;
+//console.log(user);
+//vlaues can be updated if object declared with const
 const person = {
     name: " ali",
     age: 40,
     Id: 2345
-}; //vlaues can be updated if object declared with const
+};
 person.age = 49;
 console.log(person);
 //Object Destructure
@@ -81,7 +95,7 @@ for (const x in myObj) {
     console.log(myObj[x]); //values
     console.log(x); //keys
 }
+for (const x in myObj) {
+    console.log(`Key: ${x} , value: ${myObj[x]}`);
+}
 export {};
-//     for (const x in myObj){
-//         console.log(`Key: ${x} , value: ${myObj[x]}`);
-//     }

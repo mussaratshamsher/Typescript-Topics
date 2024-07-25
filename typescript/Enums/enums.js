@@ -7,15 +7,28 @@
 //rather than using enum , const enum is preferred
 //Enum value counts from zero like index value
 //Syntax: enum vairable{constant object}
+//computed enums: when values assigned to member of enum other than number, so the member will be computed enum .
+// Fully inilitiazed enum:if values assigned to all members then enum will be fully initialized
+//Partially initilized enum: if values assigned to some of the members then enum will be partially inilized.
+//heterogeneous  : differnt type of value assigned to members
+//homogenesous enums: same type of value assigned to members
+var Days;
+(function (Days) {
+    Days[Days["Monday"] = 0] = "Monday";
+    Days[Days["Tuesday"] = 1] = "Tuesday";
+    Days[Days["Wednesday"] = 2] = "Wednesday";
+})(Days || (Days = {}));
+console.log(Days);
+console.log(2 /* Days2.Saturday */);
 //log statement
 var car;
 (function (car) {
     car[car["Alto"] = 0] = "Alto";
-    car[car["Mehran"] = 1] = "Mehran";
-    car[car["Suzuki"] = 2] = "Suzuki";
-    car[car["Cultus"] = 3] = "Cultus";
+    car[car["Mehran"] = 2] = "Mehran";
+    car[car["Suzuki"] = 4] = "Suzuki";
+    car[car["Cultus"] = 6] = "Cultus";
 })(car || (car = {}));
-console.log(car[1]); //giving index to log element 'Mehran'
+console.log(car[0]); //giving index to log element 'Mehran'
 console.log(car['Suzuki']); //accessing index using element
 //Q: Enum for days of week. function that takes a day as an argument & returns "Weekend" if Saturday/Sunday & 
 // "Weekday" for other days.
@@ -40,3 +53,7 @@ var c = 1 /* Color.Green */;
 var colorIndex = 4 /* Color2["Blue"] */;
 console.log(colorIndex);
 export {};
+//difference bw enum & const enum
+//reverse maping: members and values both can be get in case of enum.this is known as reverse maping
+//enum shows reverse maping but const enum does not log whole enum entity
+//const enum's performance is better than simple enum

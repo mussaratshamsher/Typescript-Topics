@@ -66,7 +66,7 @@ for (let movies in favMovies) {
 for (let movies in favMovies){
     console.log("\n Elements InLoop: " , favMovies[movies])//logs elements
 };
-
+//for in for objects
 let object:any = {
   student1 : " Ali",
   student2 : " Bilal"
@@ -82,7 +82,7 @@ console.log('\n Assignment2');
 let car= {
   make: 'Yamaha', model: 'camry', year:'2020'
 };
-function propertyCar(car: {[key:string]: string|number}){
+function propertyCar (car: {[key:string]: string|number}){
   for (let key  in car){
     console.log(` ${key}: ${car[key]}`);
     }
@@ -95,7 +95,6 @@ let namesOfList = ['hina', 'saima', 'tia'];
 namesOfList.forEach(names => {
   console.log(`asslam-O-alaikum! ${names} I want to go Murree with you..`)
 })
-
 
 
 //While loop: Runs the code if condition is true & if condition is wrong, it'll exit from loop

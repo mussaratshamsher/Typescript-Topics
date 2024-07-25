@@ -13,11 +13,11 @@
 // Fully inilitiazed enum:if values assigned to all members then enum will be fully initialized
 //Partially initilized enum: if values assigned to some of the members then enum will be partially inilized.
 
-//heterogeneous  : differnt type of value assigned to members
-//homogenesous enums: same type of value assigned to members
+//heterogeneous enum : differnt type of value assigned to members
+//homogeneous enums: same type of value assigned to members
 
 enum Days {
-  Monday, //members
+  Monday, //each entity is known as member of enum
   Tuesday,
   Wednesday,
 }
@@ -30,8 +30,8 @@ const enum  Days2 {
 console.log(Days2.Saturday);
 
           //log statement
-          enum car {'Alto', 'Mehran', 'Suzuki', 'Cultus'}         
-          console.log(car[1]); //giving index to log element 'Mehran'
+          enum car {'Alto', 'Mehran'=2 , 'Suzuki'=4, 'Cultus'=6}         
+          console.log(car[0]); //giving index to log element 'Mehran'
           console.log(car['Suzuki']); //accessing index using element
           
           //Q: Enum for days of week. function that takes a day as an argument & returns "Weekend" if Saturday/Sunday & 
@@ -66,6 +66,8 @@ console.log(Days2.Saturday);
           const enum Color2 {Red = 1, Green = 2, Blue = 4};//can assign values to all
           var colorIndex = Color2["Blue"];
           console.log(colorIndex);
+
+
           //difference bw enum & const enum
 //reverse maping: members and values both can be get in case of enum.this is known as reverse maping
 //enum shows reverse maping but const enum does not log whole enum entity
