@@ -1,4 +1,5 @@
 //top level await
+
 function fetch(){
     return new Promise ((resolve, reject)=>{
         setTimeout(()=> {

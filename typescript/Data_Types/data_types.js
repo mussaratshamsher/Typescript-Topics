@@ -18,9 +18,9 @@ let array = ['string', false, 67, 8 > 2,];
 //if any function have never type retrun data then its ending vaue will not be reachable
 //gives infinite value
 // Function returning never must not have a reachable end point
-// Function returning never must not have a reachable end point
-//function error(message: string): never {
-//   throw new Error(message); }
+function error(message) {
+    throw new Error(message);
+}
 // var f:never = null  throws error as null is not assigned to never type
 function abc() {
     while (true) {
@@ -37,6 +37,7 @@ data = function () { };
 data = {};
 data = [];
 data = undefined;
+data = null;
 //data = any; //throws error
 //any
 // in any type we can store any kind of data
@@ -50,7 +51,7 @@ value = {};
 value = function () { };
 value = null;
 value = undefined;
-//value = unknown          throws error
+//value = unknown  //throws error
 //null:
 // intentional absence of value. Mostly not used in typescript
 var x = null; //null as a value of variable
@@ -75,6 +76,19 @@ var b;
 //They are particularly useful for creating property keys for objects 
 //and for creating private properties or methods in classes.
 //unique and immutable primitive value.
+//Example usage
+const USER_ID = Symbol('userId');
+const USER_NAME = Symbol('userName');
+const user = {
+    [USER_ID]: 123,
+    [USER_NAME]: 'John Doe'
+};
+// Accessing symbol properties
+console.log(user[USER_ID]); // Output: 123
+console.log(user[USER_NAME]); // Output: John Doe
+// Checking if a symbol property exists
+console.log(USER_ID in user); // Output: true
+console.log(USER_NAME in user); // Output: true
 //void:
 //when value is never returned
 var nothing = undefined;

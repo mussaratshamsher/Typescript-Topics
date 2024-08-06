@@ -69,6 +69,7 @@ for (let movies in favMovies) {
     console.log("\n Elements InLoop: ", favMovies[movies]); //logs elements
 }
 ;
+//for in for objects
 let object = {
     student1: " Ali",
     student2: " Bilal"

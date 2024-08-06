@@ -10,8 +10,8 @@
 //computed enums: when values assigned to member of enum other than number, so the member will be computed enum .
 // Fully inilitiazed enum:if values assigned to all members then enum will be fully initialized
 //Partially initilized enum: if values assigned to some of the members then enum will be partially inilized.
-//heterogeneous  : differnt type of value assigned to members
-//homogenesous enums: same type of value assigned to members
+//heterogeneous enum : differnt type of value assigned to members
+//homogeneous enums: same type of value assigned to members
 var Days;
 (function (Days) {
     Days[Days["Monday"] = 0] = "Monday";
